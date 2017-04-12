@@ -1,0 +1,87 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BINGO</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+	
+	<script type="text/javascript" src="bingoScript.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Poller+One');
+	</style>
+</head>
+
+<body>
+	<h1> Let's Play Bingo! </h1>
+	<div class="col-lg-3 goal">
+	<h2 id="pick">Pick A Goal To Start The Game</h2>
+	<form action="" id="form">
+		<select onchange="createCard()" type="dropdown" id="goals">
+			<option id="horizontal">Any Horizontal Line</option>
+			<option id="vertical">Any Vertical Line</option>
+			<option id="corners">All 4 Corners</option>
+			<option id="diagnol">Any Diagonal Line</option>
+			<option id="fullCard">Full Card</option>
+		</select>
+	</form>
+	</div>
+
+	<div class="col-lg-6 bingo-card">
+		<table>
+			<tr>
+				<th class="letter" width="20%">B</th>
+				<th class="letter" width="20%">I</th>
+				<th class="letter" width="20%">N</th>
+				<th class="letter" width="20%">G</th>
+				<th class="letter" width="20%">O</th>
+			</tr>
+			<tr>
+				<td id="B1"  onclick="check('B1')">&nbsp;</td>
+				<td id="I1"  onclick="check('I1')">&nbsp;</td>
+				<td id="N1"  onclick="check('N1')">&nbsp;</td>
+				<td id="G1"  onclick="check('G1')">&nbsp;</td>
+				<td id="O1"  onclick="check('O1')">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="B2"  onclick="check('B2')">&nbsp;</td>
+				<td id="I2"  onclick="check('I2')">&nbsp;</td>
+				<td id="N2"  onclick="check('N2')">&nbsp;</td>
+				<td id="G2"  onclick="check('G2')">&nbsp;</td>
+				<td id="O2"  onclick="check('O2')">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="B3"  onclick="check('B3')">&nbsp;</td>
+				<td id="I3"  onclick="check('I3')">&nbsp;</td>
+				<td id="N3"  onclick="check('N3')">&nbsp;</td>
+				<td id="G3"  onclick="check('G3')">&nbsp;</td>
+				<td id="O3"  onclick="check('O3')">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="B4"  onclick="check('B4')">&nbsp;</td>
+				<td id="I4"  onclick="check('I4')">&nbsp;</td>
+				<td id="N4"  onclick="check('N4')">&nbsp;</td>
+				<td id="G4"  onclick="check('G4')">&nbsp;</td>
+				<td id="O4"  onclick="check('O4')">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="B5"  onclick="check('B5')">&nbsp;</td>
+				<td id="I5"  onclick="check('I5')">&nbsp;</td>
+				<td id="N5"  onclick="check('N5')">&nbsp;</td>
+				<td id="G5"  onclick="check('G5')">&nbsp;</td>
+				<td id="O5"  onclick="check('O5')">&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+	<div class="Number col-lg-3">
+		<button onclick="generateNumber()" id="generateNumber" class="genNum">Click Me To Generate A New Number</button>
+		<p id="num"></p>
+		<button onclick="checkWin()" id="checkWin" class="win">Click Me To See If You Won</button>
+	</div>
+
+</body>
+</html>

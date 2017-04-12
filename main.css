@@ -1,0 +1,54 @@
+body {
+	font-family: 'Poller One', cursive !important;
+	background-color: #FF007F;
+}
+
+#page{
+	width:455px;
+}
+
+.letter {
+	padding-top: 10px;
+	font-size: 36px;
+	text-align: center;
+}
+
+td{
+	color: red;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	border: 6px solid black;
+	background-color: #eee;
+}
+
+.bingohead{
+	border: 10px solid #c2324c;
+}
+
+#pick {
+	padding-top: 100px;
+	padding-left: 25px;
+	text-align: center;
+}
+
+#form {
+	padding-left: 55px;
+}
+
+h1, h3, h3 a{
+	text-align: center;
+	padding: 3px;
+	color: #211111;
+	background-color: #EEEEEE;
+	border :2px solid #DDDDCC;
+}
+table {
+	margin-left: 62px;
+}
+
+td{
+	font-size: 32px;
+	cursor:pointer;
+}
